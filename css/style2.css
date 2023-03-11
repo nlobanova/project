@@ -1,0 +1,593 @@
+/* libre-franklin-regular - latin */
+@font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/libre-franklin-v13-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/libre-franklin-v13-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* libre-franklin-700 - latin */
+  @font-face {
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/libre-franklin-v13-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/libre-franklin-v13-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }  
+
+/* tenor-sans-regular - latin */
+@font-face {
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/tenor-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/tenor-sans-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* source-serif-pro-regular - latin */
+@font-face {
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/source-serif-pro-v15-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/source-serif-pro-v15-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+
+/* настройки для всего документа начало */  
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: normal;
+    color:black;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* настройки скролла на сайте начало */
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #E6E6E6;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #999999;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+/* настройки скролла на сайте конец */
+
+/* настройки для всего документа конец */  
+
+
+/* шапка сайта начало */  
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 36px;
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    margin-right: 40px;
+}
+
+.header__item:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus,.header__link:active{
+    opacity: .75;
+}
+
+.header__line{
+    position: absolute;
+    border: 0;
+    height: 1px;
+    left: 0%;
+    right: 0%;
+    margin: 0px;
+    top: 90px;
+    border-top-color: #E6E6E6;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+/* шапка сайта конец */  
+
+/* главное изображение на сайте начало */
+.main-illustration{
+    margin-top: 149px;
+}
+
+
+.section_main-illustration{
+    display: grid;
+    grid-gap: 0 51px;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.main-illustration-tag{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-top: 6px;
+}
+
+.main-illustration-title{
+    margin-top: 18px;
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.main-illustration-description{
+    margin-top: 27px;
+    font-family: 'Source Serif Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    
+}
+
+.main-illustration-creator{
+    margin-top: 28px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.like__btn {
+    padding: 10px 15px;
+    box-sizing: border-box;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    text-transform: uppercase;
+    align-items: center;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 40px 37%;
+    display: block;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_like{
+    margin: 0 2px 0;
+}
+
+/* главное изображение на сайте конец */
+
+/* изображения под главным изображением начало */
+.more-illustration{
+    margin: 60px;
+}
+
+.section_more-illustration{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 20px;
+    grid-template-rows: 481px 522px;
+}
+
+.illustration-tag{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+.illustration-title{
+    font-family: 'Tenor Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.illustration-creator{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.section_illustration-line {
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 1686px;
+    background: #E6E6E6;
+    border-radius: 0px;
+    max-width: 1200px;
+    border: 0;
+}
+/* изображения под главным изображением конец */
+
+
+/* блок с последними постами начало */
+.letest-posts-title{
+    margin-top: 90px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.section_latest-posts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 20px;
+    grid-template-rows: 439px 479px;
+    margin-top: 30px;
+}
+
+.section_latest-posts-line{
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin-top: 90px;
+    background: #E6E6E6;
+    border-radius: 0px;
+    max-width: 1200px;
+    border: 0;
+}
+
+.subsection_latest-posts:not(:nth-child(-n + 4)) {
+    display: none;
+}
+
+.button__view-more{
+    padding: 21px 29px;
+    box-sizing: border-box;
+    height: 54px;
+    left: 0%;
+    right: 0%;
+    top: px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    text-transform: uppercase;
+    align-items: center;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin: auto;
+    margin-top: -400px;
+    display: block;
+}
+/* блок с последними постами конец */
+
+
+/* блок с будущими постами начало */
+.featured-posts-title{
+    margin-top: 181px;
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+
+/* карусель для будущих постов */
+.section_featured-posts-slideshow{
+    max-width: 650px;
+    height: 550px;
+    position: relative;
+    margin: 60px auto;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -52px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(71, 71, 71, 0.7);
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0, 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 90px;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade{
+    from{apacity: .4}
+    to{apacity: 1}
+}
+
+@keyframes fade{
+    from{apacity: .4}
+    to{apacity: 1}
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* блок с будущими постами конец */
+
+
+/* футтер сайта начало */
+.section_futter{
+    background-color: #141414;
+    height: 617px;
+}
+
+.futter_logo-white{
+    margin-top: 93px;
+}
+
+.futter-links-line{
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 62px;
+    background: #4D4D4D;
+    border-radius: 0px;
+    max-width: 1200px;
+    border: 0;
+}
+
+.logo-whith-copywrite{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.copywrite{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #666666;
+    margin-left: 15px;
+}
+
+/* ссылки */
+.futter__link{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.categories__link:hover, .categories__link:focus,.categories__link:active{
+    opacity: .75;
+}
+
+.title_list{
+    font-family: 'Libre Franklin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.categories__links{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 225px);
+}
+
+.futter__list_gap-15px {
+    margin-bottom: 15px;
+}
+
+.futter__list_gap-10px {
+    margin-bottom: 10px;
+}
+.futter__nav_item{
+    height: 165px;
+    flex-basis: 225px;
+}
+
+.futter__nav{
+    margin-top: 123px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/* иконки соцсетей */
+.socials_list_item{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.social-icons{
+    flex-basis: 35px;
+}
+
+/* подписка на новости почта */
+.input__e-mail{
+    height: 48px;
+    width: 221px;
+    left: 0px;
+    top: -0.40625px;
+    border-radius: 0px;
+    border: 0;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 18px 24px;
+}
+
+.button__send_e-mail{
+    height: 48px;
+    width: 79px;
+    top: -0.40625px;
+    border-radius: 0px;
+    border: 0;
+    background-color: #000000;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: Libre Franklin;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 18px 24px;
+}
+
+
+.subscribe-block{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_item{
+    margin-top: 20px;
+}
+
+/* футтер сайта конец */
+
+
+
